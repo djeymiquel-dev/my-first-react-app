@@ -4,11 +4,13 @@ import { DrinkButtons } from "./components/DrinkButtons";
 
 function App() {
   const greeting = "Welcome to our cafe!";
+  const tea = "Tea";
+  const coffee = "Coffee";
 
   return (
     <div className="App">
       <h1>{greeting}</h1>
-      <DrinkButtons />
+      <DrinkButtons drinkOne={tea} drinkTwo={coffee} />
     </div>
   );
 }

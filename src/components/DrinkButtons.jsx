@@ -1,12 +1,15 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/react-in-jsx-scope */
 import "./DrinkButtons.css";
 
-export const DrinkButtons = () => {
+export const DrinkButtons = ({ drinkOne, drinkTwo }) => {
   return (
     <>
-      <h2 className="button-group">Would you like to drink tea or coffee?</h2>
-      <button className="button">Tea</button>
-      <button className="button">Coffee</button>
+      <h2>Would you like Tea or Coffee?</h2>
+      <div className="button-group">
+        <button className="button">{drinkOne}</button>
+        <button className="button">{drinkTwo}</button>
+      </div>
     </>
   );
 };
