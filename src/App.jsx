@@ -11,11 +11,11 @@ const App = () => {
   return (
     <div className="App">
       {userDrink ? (
-        <DrinkChoice drink={userDrink} />
+        <DrinkChoice drink={userDrink} clickFn={setUserDrink} />
       ) : (
         <>
           <h1>{greeting}</h1>
-          <DrinkSearch />
+          <DrinkSearch clickFn={setUserDrink} />
         </>
       )}
     </div>
