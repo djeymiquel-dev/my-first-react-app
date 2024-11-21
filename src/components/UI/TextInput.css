@@ -1,3 +1,6 @@
 .text-input {
-  border-color: blue;
+  border: 0.5px solid gray;
+  margin-bottom: 0.5rem;
+  width: 200px;
+  border-radius: 30px;
 }
